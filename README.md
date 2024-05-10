@@ -1,3 +1,7 @@
+#
+
+https://github.com/web-infra-dev/rspack/pull/5492#issuecomment-2104118901
+
 # rspack-repro
 
 - [Rspack website](https://www.rspack.dev/)

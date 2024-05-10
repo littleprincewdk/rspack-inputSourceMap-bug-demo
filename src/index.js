@@ -1,3 +1,8 @@
-import('./render').then(exports => {
-    exports.render()
-})
+"use strict";
+
+function message() {
+  console.log('inline-source-map');
+}
+
+message();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImlubGluZS1zb3VyY2UtbWFwLnRzIl0sIm5hbWVzIjpbIm1lc3NhZ2UiLCJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiOztBQUFBLFNBQVNBLE9BQVQsR0FBbUI7QUFDakJDLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLG1CQUFaO0FBQ0Q7O0FBRURGLE9BQU8iLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBtZXNzYWdlKCkge1xuICBjb25zb2xlLmxvZygnaW5saW5lLXNvdXJjZS1tYXAnKTtcbn1cblxubWVzc2FnZSgpO1xuIl19
