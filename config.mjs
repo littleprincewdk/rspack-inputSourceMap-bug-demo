@@ -14,7 +14,7 @@ if (!isRunningRspack && !isRunningWebpack) {
  */
 const config = {
   mode: "development",
-  devtool: false,
+  devtool: 'inline-source-map',
   entry: {
     main: "./src/index",
   },
@@ -29,6 +29,20 @@ const config = {
   experiments: {
     css: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: isRunningWebpack ? "swc-loader" : 'builtin:swc-loader',
+          options: {
+            sourceMaps: true,
+            inputSourceMap: true,
+          }
+        }
+      }
+    ]
+  }
 };
 
 export default config;
